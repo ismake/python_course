@@ -1,4 +1,17 @@
 def calcular_propina(total, porcentaje):
+    """
+    Calcula el monto de la propina basado en el total y porcentaje.
+
+    Args:
+        total (str/float): Total de la cuenta
+        porcentaje (str/float): Porcentaje de propina
+
+    Returns:
+        float: Monto de la propina redondeado a 2 decimales
+
+    Raises:
+        ValueError: Si los argumentos no son numéricos
+    """
     try:
         total = float(total)
         porcentaje = float(porcentaje)
@@ -8,6 +21,7 @@ def calcular_propina(total, porcentaje):
 
 
 def main():
+    """Función principal que ejecuta la calculadora de propinas."""
     print("Calculadora de propinas")
     total = input("Ingresa el total de la cuenta (por ejemplo 345.50): ").strip()
     porcentaje = input("Ingresa el porcentaje de propina (por ejemplo 15): ").strip()
