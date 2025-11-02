@@ -1,12 +1,32 @@
+# Entornos virtuales
 .venv/
+venv/
+env/
+
+# Cache de Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE
 .vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
 .pytest_cache/
 .coverage
-.venv/
-__pycache__/
-*.pyc
-.vscode/
-.pytest_cache/
-.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# MacOS
+.DS_Store
